@@ -1,7 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.blocoskaupresenca.com.br/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Specific bot rules
 User-agent: Googlebot
 Allow: /
 
-User-agent: Bingbot
+User-agent: Bingbot  
 Allow: /
 
 User-agent: Twitterbot
@@ -10,5 +20,16 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+# Block access to admin areas (if any in future)
 User-agent: *
-Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Allow access to images and assets
+User-agent: *
+Allow: /logo-kau-presenca.png
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+Allow: /*.css
+Allow: /*.js

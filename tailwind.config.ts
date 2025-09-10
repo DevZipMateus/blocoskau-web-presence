@@ -19,13 +19,22 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        surface: "hsl(var(--surface))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
+          dark: "hsl(var(--primary-dark))",
+          light: "hsl(var(--primary-light))",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+        },
+        construction: {
+          DEFAULT: "hsl(var(--construction))",
+          dark: "hsl(var(--construction-dark))",
+          light: "hsl(var(--construction-light))",
+          foreground: "hsl(var(--construction-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -47,16 +56,20 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-construction': 'var(--gradient-construction)',
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-subtle': 'var(--gradient-subtle)',
+      },
+      boxShadow: {
+        'primary': 'var(--shadow-primary)',
+        'construction': 'var(--shadow-construction)',
+        'elegant': 'var(--shadow-elegant)',
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
